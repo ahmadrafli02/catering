@@ -1,3 +1,5 @@
+<p align="center"><strong>Khadijah Catering</strong></p>
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -20,6 +22,21 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
+
+## Development
+
+- Copy `.env.example` to `.env` and generate an application key.
+- Run database migrations and tests:
+
+```bash
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+composer test
+```
+
+The application exposes a simple health check endpoint at `/healthz`.
 
 ## Learning Laravel
 
