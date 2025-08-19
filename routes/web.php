@@ -42,3 +42,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('orders/{order}/payments/{payment}', [PaymentController::class, 'destroy'])->name('orders.payments.destroy');
 });
 
+// Health check
+Route::get('/healthz', function () {
+    return response()->noContent();
+});
+
